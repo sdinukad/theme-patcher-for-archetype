@@ -18,16 +18,24 @@ Displays status messages and specific errors.
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
 
+# Get the directory where the script is located
+$ScriptFolder = Split-Path -Parent $MyInvocation.MyCommand.Definition
+$PokeMMORoot = Split-Path -Parent $ScriptFolder  # One level up from the script
+$PokeMMODataPath = Join-Path -Path $PokeMMORoot -ChildPath "data"
+
 # --- Define Fixed Paths ---
 try {
-    # Base path to PokeMMO data directory
-    $PokeMMODataPath = Join-Path -Path $env:LOCALAPPDATA -ChildPath "Programs\PokeMMO\data" -ErrorAction Stop
+    # Get the folder one level above the script (should be the PokeMMO root folder)
+    $ScriptFolder = Split-Path -Parent $MyInvocation.MyCommand.Definition
+    $PokeMMORoot = Split-Path -Parent $ScriptFolder
+    $PokeMMODataPath = Join-Path -Path $PokeMMORoot -ChildPath "data" -ErrorAction Stop
     $FixedModsBasePath = Join-Path -Path $PokeMMODataPath -ChildPath "mods" -ErrorAction Stop
-    $DefaultThemePath = Join-Path -Path $PokeMMODataPath -ChildPath "themes\default" -ErrorAction Stop # Path to default theme folder
+    $DefaultThemePath = Join-Path -Path $PokeMMODataPath -ChildPath "themes\default" -ErrorAction Stop
 } catch {
-    [System.Windows.Forms.MessageBox]::Show("Could not construct the standard paths to the PokeMMO data directory using %LOCALAPPDATA%.`n`nError: $($_.Exception.Message)`n`nThis script may not work if PokeMMO is installed in a non-standard location.", "Path Error", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Error)
+    [System.Windows.Forms.MessageBox]::Show("Could not locate the PokeMMO data directory relative to this script location.`n`nMake sure this script is inside a folder within your main PokeMMO folder.`n`nError: $($_.Exception.Message)", "Path Error", [System.Windows.Forms.MessageBoxButtons]::OK, [System.Windows.Forms.MessageBoxIcon]::Error)
     exit 1
 }
+
 $ArchetypeCounterRootFolderName = "archetype-counter-main" # Expected name of the AC mod folder
 $SourceACRelativePath = "src\lib\AC"
 $FullACTempRootPath = Join-Path -Path $FixedModsBasePath -ChildPath $ArchetypeCounterRootFolderName
