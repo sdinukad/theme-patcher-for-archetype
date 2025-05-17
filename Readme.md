@@ -16,8 +16,8 @@ It works with themes located in your PokeMMO `data/mods` folder and also with th
 
 **How to Use (Easy Method - Recommended):**
 
-1.  **Extract:** Make sure you have extracted the contents of the .zip file you downloaded this tool in. You should have this `README.txt`, a `.ps1` file (the script), and a `.bat` file (the launcher). Keep them together in the same folder.
-2.  **Copy to the Pokemmo installation folder** Paste the extracted folder into the pokemmo installation folder.
+1.  **Extract:** Make sure you have extracted the contents of the .zip file you downloaded this tool in. You should have the folder `archetypefixer` which contains `README.txt`, a `.ps1` file (the script), and a `.bat` file (the launcher). Keep them together in the same folder.
+2.  **Copy to the Pokemmo installation folder** Copy and paste the extracted folder named `archetypefixer` into the pokemmo installation folder.
 3.  Double-click the `RunThemePatcher.bat` file found inside the folder.
 4.  **Use the GUI:**
     *   A window titled "PokeMMO Theme Patcher" will appear.
