@@ -11,23 +11,23 @@ This tool automates the process of making PokeMMO themes compatible with the Arc
 It works with themes located in your PokeMMO `data/mods` folder and also with the standard `data/themes/default` theme.
 
 **Requirements:**
-
-*   PokeMMO installed in the standard location (`%LOCALAPPDATA%\Programs\PokeMMO`).
 *   The Archetype Counter mod installed and named `archetype-counter-main` inside your `data/mods` folder.
 *   The theme you want to patch must be extracted as a FOLDER (not a .zip or .mod file).
 
 **How to Use (Easy Method - Recommended):**
 
 1.  **Extract:** Make sure you have extracted the contents of the .zip file you downloaded this tool in. You should have this `README.txt`, a `.ps1` file (the script), and a `.bat` file (the launcher). Keep them together in the same folder.
-2.  **Run the Launcher:** Double-click the `RunThemePatcher.bat` file.
-3.  **Use the GUI:**
+2.  **Copy to the Pokemmo installation folder** Paste the extracted folder into the pokemmo installation folder.
+3.  Double-click the `RunThemePatcher.bat` file found inside the folder.
+4.  **Use the GUI:**
     *   A window titled "PokeMMO Theme Patcher" will appear.
     *   Click the **"Scan for Themes"** button. It will automatically look in your standard PokeMMO mods and themes directories.
     *   The list box will show folders found, including the 'default' theme if available. (Remember: .zip/.mod files need to be extracted first to show up here!)
     *   Click on the **FOLDER** in the list that you want to patch.
     *   Click the **"Patch Selected Folder"** button.
     *   Watch the **Status Log** at the bottom for progress messages and check for any pop-up success or error messages.
-
+<details>
+ 
 **Why is there a `.bat` file? (Understanding PowerShell Execution Policy):**
 
 *   PowerShell (`.ps1` files) is a powerful scripting tool for Windows. For security, Windows has a feature called "Execution Policy" that, by default, often prevents running scripts downloaded from the internet or scripts that aren't digitally signed (like this one). This helps protect you from accidentally running malicious code.
@@ -56,3 +56,5 @@ It works with themes located in your PokeMMO `data/mods` folder and also with th
 **Disclaimer:**
 
 This tool is provided as-is. While tested, use it at your own risk. Always consider backing up your `data/mods` and `data/themes` folders before making modifications, just in case something unexpected happens.
+
+</details>
