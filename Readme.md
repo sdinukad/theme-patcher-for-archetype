@@ -1,6 +1,6 @@
-# PokeMMO Archetype Counter Theme Patcher
+# PokeMMO Archetype Counter Patcher
 
-This tool helps you easily patch your PokeMMO themes to work with the Archetype Counter mod. It has a simple graphical interface.
+This tool helps you easily patch your Archetype Counter mod not working/counting. It has a simple graphical interface.
 
 ![Screenshot of Patcher GUI](screenshot.png "Interface")
 
