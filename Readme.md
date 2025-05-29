@@ -3,16 +3,16 @@
 This tool helps you easily patch your PokeMMO themes to work with the Archetype Counter mod. It has a simple graphical interface.
 
 **(Screenshot of the GUI here)**
-<!-- ![Screenshot of Patcher GUI](link_to_screenshot.png) -->
+<!-- ![Screenshot of Patcher GUI]([link_to_screenshot.png](https://i.imgur.com/7MhbMV8.png)) -->
 
 ## Quick Download & Use (Recommended)
 
 1.  **Go to Downloads:**
     *   **[➡️ Click here to go to the Releases page and download the Patcher ⬅️](https://github.com/sdinukad/theme-patcher-for-archetype/releases/latest)**
 2.  **Download the `.exe`:**
-    *   On the Releases page, look for `PokeMMOThemePatcher.exe` under "Assets" and download it.
+    *   On the Releases page, look for `Archetype Patcher.exe` under "Assets" and download it.
 3.  **Run the Patcher:**
-    *   Double-click `PokeMMOThemePatcher.exe`. No installation needed!
+    *   Double-click `Archetype Patcher.exe`. No installation needed!
 4.  **Using the Patcher:**
     *   **Select PokeMMO Folder:** Click "Browse..." and find your main PokeMMO game folder.
     *   **Scan:** Click "Scan for Themes".
@@ -32,6 +32,7 @@ This tool helps you easily patch your PokeMMO themes to work with the Archetype 
 *   **You MUST have the "Archetype Counter" mod installed** in your PokeMMO `data/mods/` folder. The patcher needs this mod (specifically a folder named `archetype-counter-main`) to copy files from.
 *   If you see any errors, make sure you've selected the correct PokeMMO folder and that the Archetype Counter mod is installed.
 *   Sometimes, antivirus programs might flag tools like this. The program is safe; the source code is available in this repository if you're curious.
+*   Themes that need to be patched cannot be zip files; they need to be folders.
 
 ## For Advanced Users (Source Code)
 
