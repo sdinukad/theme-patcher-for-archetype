@@ -1,4 +1,3 @@
-
 <#
 .USAGE
 Provides a GUI to patch PokeMMO theme folders (including the default theme) found within a user-selected PokeMMO installation path for Archetype Counter compatibility.
