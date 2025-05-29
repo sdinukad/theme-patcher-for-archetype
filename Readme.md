@@ -19,6 +19,15 @@ This tool helps you easily patch your Archetype Counter mod not working/counting
     *   **Patch:** Click "Patch Selected Theme".
     *   Check the messages in the status log at the bottom for results.
 
+**Important Note on Windows SmartScreen:**
+When you first run `PokeMMOThemePatcher.exe`, Windows SmartScreen might show a warning like "Windows protected your PC." This is because the application is new and not yet widely recognized by Microsoft.
+
+To run the patcher:
+1. Click on **More info** on the SmartScreen prompt.
+2. Then, click the **Run anyway** button.
+
+The application is safe to use. The source code (PowerShell script) is available in this GitHub repository for anyone to inspect.
+
 ## What This Tool Does
 
 *   Lets you pick your PokeMMO game folder.
