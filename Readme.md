@@ -3,7 +3,8 @@
 This tool helps you easily patch your PokeMMO themes to work with the Archetype Counter mod. It has a simple graphical interface.
 
 **(Screenshot of the GUI here)**
-![Screenshot of Patcher GUI]([screenshot.png](screenshot.png))
+![Screenshot of Patcher GUI]
+screenshot.png(screenshot.png)
 
 ## Quick Download & Use (Recommended)
 
