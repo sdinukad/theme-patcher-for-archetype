@@ -1,3 +1,5 @@
+# This is now obsolete due to pokemmo implementing built in counter. 
+
 # PokeMMO Archetype Counter Patcher
 
 This tool helps you easily patch your Archetype Counter mod not working/counting. It has a simple graphical interface.
